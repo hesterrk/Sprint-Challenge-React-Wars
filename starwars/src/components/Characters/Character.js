@@ -1,5 +1,5 @@
 import React from 'react';
-import { styledCharacter } from './styledCharacter';
+import  { styledCharacter } from './styledCharacter';
 
 function Character(props) {
     return (

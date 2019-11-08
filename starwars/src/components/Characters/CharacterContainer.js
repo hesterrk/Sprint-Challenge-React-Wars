@@ -11,31 +11,30 @@ const CharacterContainer = () => {
     useEffect(() => {
 
         axios.get('https://swapi.co/api/people').then(res => {
+            console.log(res.data.results);
           setPeople(res.data.results);
+
       
     
-      });
+      })
+      .catch(err => {
+          console.log(err);
+      })
      
       
     },[]);
 
 
 
-return (
+return ( 
 <div className= "CharacterContainer"> 
-
-{people.map((character => {
-    <Character name ={character.name} birth_year={character.birth_year}/>
-    
-)
-})
-
+{people.map((people,index) =>  <Character key = {index} name = {people.name} birth_year = {people.birth_year} gender = {people.gender} /> )} 
+</div>)
 
 }
-</div>
-);
-}
 
 
 
-export default CharacterContainer; 
+
+
+export default CharacterContainer 

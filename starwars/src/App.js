@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import CharacterContainer from './components/Characters/CharacterContainer';
 import Character from './components/Characters/Character';

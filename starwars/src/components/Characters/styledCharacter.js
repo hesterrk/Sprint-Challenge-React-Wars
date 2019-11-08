@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const styledCharacter = styled.div`
+export const StyledCharacter = styled.div`
     padding: 30px;
     `;
 

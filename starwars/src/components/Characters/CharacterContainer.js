@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Character from './Character';
 
 
 const CharacterContainer = () => {
+
+    const [people, setPeople] = useState([]);
+
 
     useEffect(() => {
 
@@ -12,23 +15,27 @@ const CharacterContainer = () => {
       
     
       });
+     
+      
     },[]);
 
 
 
 return (
-<div className= "CharacterContainer">
-<Character />
-<Character />
+<div className= "CharacterContainer"> 
 
-</div>
+{people.map((character => {
+    <Character name ={character.name} birth_year={character.birth_year}/>
+    
+)
+})
 
-);
 
 }
+</div>
+);
+}
 
-// {people.map(character => {
-//     <Character name ={character.name} birth_year={character.birth_year/>)}
 
 
 export default CharacterContainer; 

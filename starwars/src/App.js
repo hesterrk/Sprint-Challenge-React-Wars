@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
 import CharacterContainer from './components/Characters/CharacterContainer';
+import Character from './components/Characters/Character';
 
 
 const App = () => {
-const [people, setPeople] = useState([])
 
 //   useEffect(() => {
 
@@ -25,6 +25,7 @@ const [people, setPeople] = useState([])
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <CharacterContainer />
+      <Character/>
     
     </div>
   

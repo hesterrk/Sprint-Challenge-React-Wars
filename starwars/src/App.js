@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Character from './components/Characters/Character'
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 const App = () => {
 const [people, setPeople] = useState([])

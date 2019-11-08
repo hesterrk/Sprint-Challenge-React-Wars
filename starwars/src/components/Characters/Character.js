@@ -1,4 +1,5 @@
 import React from 'react';
+import { styledCharacter } from './styledCharacter';
 
 function Character(props) {
     return (
@@ -7,10 +8,8 @@ function Character(props) {
             <p>{props.birth_year}</p>
 
         </div>
-    )
+    );
 }
-
-
 
 
 

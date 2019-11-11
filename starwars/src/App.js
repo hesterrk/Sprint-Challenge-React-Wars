@@ -1,7 +1,19 @@
 import React from 'react';
 import './App.css';
+import CharacterContainer from './components/Characters/CharacterContainer';
+import Character from './components/Characters/Character';
+
 
 const App = () => {
+
+//   useEffect(() => {
+
+//     axios.get('https://swapi.co/api/people').then(response => {
+//       setPeople(response.data.results);
+  
+
+//   });
+// },[]);
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -12,7 +24,11 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <CharacterContainer />
+      <Character/>
+    
     </div>
+  
   );
 }
 

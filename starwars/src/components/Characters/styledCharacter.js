@@ -56,6 +56,8 @@ export const Button = styled.button `
     border-radius: 5px;
     margin-bottom: 20px;
     color: white;
+    margin-left: 10px;
+margin-right: 10px;
 
 `
 

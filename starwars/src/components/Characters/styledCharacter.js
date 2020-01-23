@@ -20,7 +20,7 @@ const slidein = keyframes `
 
 
 export const StyledCharacter = styled.div`
-    padding: 30px;
+    padding: 20px;
     border: 5px #4568DC solid;
     margin: 30px;
     background: #b06ab3;
@@ -40,7 +40,7 @@ text-decoration: underline;
 
 
 export const P = styled.p `
-color: #DBD5A4;
+color: ${props => (props.color ? '#727a17' : '#4b6cb7')};
 
 &:hover {
     transform: scale(1);

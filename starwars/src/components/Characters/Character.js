@@ -7,11 +7,11 @@ function Character(props) {
         <div>
             <H1>
             Name: {props.name} </H1>
-            <P>Birth Year: {props.birth_year}</P>
+            <P color="#727a17">Birth Year: {props.birth_year}</P>
             <P> Gender: {props.gender} </P>
-            <P>Eye Colour: {props.eye_color}</P>
+            <P color="#727a17">Eye Colour: {props.eye_color}</P>
             <P> Mass: {props.mass}</P>
-            <P> Height: {props.height}</P>
+            <P color="#727a17"> Height: {props.height}</P>
 
         </div>
         </StyledCharacter>

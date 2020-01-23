@@ -62,5 +62,8 @@ export const Button = styled.button `
 export const Buttonquiz = styled(Button) `
 background: #514A9D;
 
+    &:hover {
+    transform: scale(1.1);
+}
 
 `

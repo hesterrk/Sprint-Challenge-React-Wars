@@ -14,7 +14,7 @@ function Character(props) {
             <P color="#727a17"> Height: {props.height}</P>
             
             <Button> More Information 👽</Button>
-            <Buttonquiz> Take Our Quiz </Buttonquiz>
+            <Buttonquiz> Character Quiz! </Buttonquiz>
 
         </div>
         </StyledCharacter>

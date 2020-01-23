@@ -18,7 +18,6 @@ const slidein = keyframes `
 
 `
 
-
 export const StyledCharacter = styled.div`
     padding: 20px;
     border: 5px #4568DC solid;

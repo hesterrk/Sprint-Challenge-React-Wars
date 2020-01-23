@@ -1,16 +1,17 @@
 import React from 'react';
-import  { StyledCharacter } from './styledCharacter';
+import  { StyledCharacter, H1, P } from './styledCharacter';
 
 function Character(props) { 
     return (
         <StyledCharacter>
         <div>
-            <h1>Name: {props.name}</h1>
-            <p>Birth Year: {props.birth_year}</p>
-            <p> Gender: {props.gender} </p>
-            <p>Eye Colour: {props.eye_color}</p>
-            <p> Mass: {props.mass}</p>
-            <p> Height: {props.height}</p>
+            <H1>
+            Name: {props.name} </H1>
+            <P>Birth Year: {props.birth_year}</P>
+            <P> Gender: {props.gender} </P>
+            <P>Eye Colour: {props.eye_color}</P>
+            <P> Mass: {props.mass}</P>
+            <P> Height: {props.height}</P>
 
         </div>
         </StyledCharacter>

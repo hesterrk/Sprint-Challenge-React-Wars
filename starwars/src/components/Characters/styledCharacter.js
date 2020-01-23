@@ -23,7 +23,7 @@ export const StyledCharacter = styled.div`
     padding: 20px;
     border: 5px #4568DC solid;
     margin: 30px;
-    background: #b06ab3;
+    background: #514A9D;
     animation: ${slidein} 4s;
 
     &:hover {
@@ -43,7 +43,24 @@ export const P = styled.p `
 color: ${props => (props.color ? '#727a17' : '#4b6cb7')};
 
 &:hover {
-    transform: scale(1);
+    transform: scale(1.2);
 }
+
+`
+
+export const Button = styled.button `
+    background: #24C6DC;
+    margin: 10px auto;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+
+`
+
+export const Buttonquiz = styled(Button) `
+background: #514A9D;
+
 
 `

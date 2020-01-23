@@ -1,5 +1,5 @@
 import React from 'react';
-import  { StyledCharacter, H1, P } from './styledCharacter';
+import  { StyledCharacter, H1, P, Button, Buttonquiz } from './styledCharacter';
 
 function Character(props) { 
     return (
@@ -12,6 +12,9 @@ function Character(props) {
             <P color="#727a17">Eye Colour: {props.eye_color}</P>
             <P> Mass: {props.mass}</P>
             <P color="#727a17"> Height: {props.height}</P>
+            
+            <Button> More Information 👽</Button>
+            <Buttonquiz> Take Our Quiz </Buttonquiz>
 
         </div>
         </StyledCharacter>

@@ -5,6 +5,7 @@ import Character from './Character';
 
 const CharacterContainer = () => {
 
+    //initialising the state with an empty array as our data takes this form
     const [people, setPeople] = useState([]);
 
 
@@ -12,6 +13,7 @@ const CharacterContainer = () => {
 
         axios.get('https://swapi.co/api/people').then(res => {
             console.log(res.data.results);
+            //setting our state setter to the data 
           setPeople(res.data.results);
 
       
@@ -28,7 +30,7 @@ const CharacterContainer = () => {
 
 return ( 
 <div className= "CharacterContainer"> 
-{people.map((people,index) =>  <Character key = {index} name = {people.name} birth_year = {people.birth_year} gender = {people.gender} /> )} 
+{people.map((people,index) =>  <Character key = {index} name = {people.name} birth_year = {people.birth_year} gender = {people.gender} eye_color={people.eye_color} mass={people.mass} height={people.height}/> )} 
 </div>)
 
 }

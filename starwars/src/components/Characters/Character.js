@@ -22,5 +22,4 @@ function Character(props) {
 }
 
 
-
 export default Character
